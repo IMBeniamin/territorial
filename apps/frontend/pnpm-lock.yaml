@@ -20,6 +20,9 @@ importers:
       '@capacitor/geolocation':
         specifier: ^7.1.5
         version: 7.1.5(@capacitor/core@7.4.3)
+      '@capacitor/motion':
+        specifier: ^7.0.1
+        version: 7.0.1(@capacitor/core@7.4.3)
       '@capacitor/preferences':
         specifier: ^7.0.2
         version: 7.0.2(@capacitor/core@7.4.3)
@@ -32,6 +35,9 @@ importers:
       '@mantine/hooks':
         specifier: ^8.3.2
         version: 8.3.2(react@19.1.1)
+      '@maplibre/maplibre-gl-compare':
+        specifier: ^0.5.0
+        version: 0.5.0(maplibre-gl@5.7.3)
       '@tanstack/react-query':
         specifier: ^5.90.2
         version: 5.90.2(react@19.1.1)
@@ -659,6 +665,11 @@ packages:
     peerDependencies:
       '@capacitor/core': '>=7.0.0'
 
+  '@capacitor/motion@7.0.1':
+    resolution: {integrity: sha512-jExCBAcB7NsCCnD07sfNhVgp2xgwN2dmyehpjsPswWGCJaTToN9lzwYyJz9As9q59sikq9n36DpNnyjP3smGAQ==}
+    peerDependencies:
+      '@capacitor/core': '>=7.0.0'
+
   '@capacitor/preferences@7.0.2':
     resolution: {integrity: sha512-JVCy0/oc6RsRencLOZ8rMqjNxAlHs7awPJU/MXqangsJ48oO2PnYGHfCvci6WgIJlqyC0QhvWZaO1BR1lVkHWQ==}
     peerDependencies:
@@ -1022,6 +1033,9 @@ packages:
     resolution: {integrity: sha512-rY0o9A5ECsTQRVhv7tL/OyDpGAoUB4tTvLiW1DSzQGq4bvTPhNw1VpSNjDJc5GFZ2XuyOtSWSVN05qOtcD71qQ==}
     engines: {node: '>= 0.6'}
 
+  '@mapbox/mapbox-gl-sync-move@0.3.1':
+    resolution: {integrity: sha512-Y3PMyj0m/TBJa9OkQnO2TiVDu8sFUPmLF7q/THUHrD/g42qrURpMJJ4kufq4sR60YFMwZdCGBshrbgK5v2xXWw==}
+
   '@mapbox/point-geometry@1.1.0':
     resolution: {integrity: sha512-YGcBz1cg4ATXDCM/71L9xveh4dynfGmcLDqufR+nQQy3fKwsAZsWd/x4621/6uJaeB9mwOHE6hPeDgXz9uViUQ==}
 
@@ -1037,6 +1051,11 @@ packages:
   '@mapbox/whoots-js@3.1.0':
     resolution: {integrity: sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==}
     engines: {node: '>=6.0.0'}
+
+  '@maplibre/maplibre-gl-compare@0.5.0':
+    resolution: {integrity: sha512-tJ5MtbMXhVstu85NSArkvZFewV0i19qBOP4TyO6JSNFY0qV3zwGLXxmxalg1QGdi18cmKnmZT86BoLCSS0rEPg==}
+    peerDependencies:
+      maplibre-gl: '>=1.14.0'
 
   '@maplibre/maplibre-gl-style-spec@24.2.0':
     resolution: {integrity: sha512-cE80g83fRcBbZbQC70siOUxUK6YJ/5ZkClDZbmm+hzrUbv+J6yntkMmcpdz9DbOrWOM7FHKR5rruc6Q/hWx5cA==}
@@ -4248,6 +4267,10 @@ snapshots:
       '@capacitor/core': 7.4.3
       '@capacitor/synapse': 1.0.4
 
+  '@capacitor/motion@7.0.1(@capacitor/core@7.4.3)':
+    dependencies:
+      '@capacitor/core': 7.4.3
+
   '@capacitor/preferences@7.0.2(@capacitor/core@7.4.3)':
     dependencies:
       '@capacitor/core': 7.4.3
@@ -4616,6 +4639,8 @@ snapshots:
 
   '@mapbox/jsonlint-lines-primitives@2.0.2': {}
 
+  '@mapbox/mapbox-gl-sync-move@0.3.1': {}
+
   '@mapbox/point-geometry@1.1.0': {}
 
   '@mapbox/tiny-sdf@2.0.7': {}
@@ -4629,6 +4654,11 @@ snapshots:
       pbf: 4.0.1
 
   '@mapbox/whoots-js@3.1.0': {}
+
+  '@maplibre/maplibre-gl-compare@0.5.0(maplibre-gl@5.7.3)':
+    dependencies:
+      '@mapbox/mapbox-gl-sync-move': 0.3.1
+      maplibre-gl: 5.7.3
 
   '@maplibre/maplibre-gl-style-spec@24.2.0':
     dependencies:
